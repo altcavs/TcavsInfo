@@ -1,0 +1,21 @@
+{
+    "environmentSettings": {
+        "webSite": {
+            "name": "WebInfo",
+            "location": "North Europe"
+        },
+        "databases": [
+            {
+                "connectionStringName": "DefaultConnection",
+                "databaseName": "WebInfo_db",
+                "serverName": "",
+                "user": "altcavs",
+                "password": "",
+                "edition": "",
+                "size": "",
+                "collation": "",
+                "location": "North Europe"
+            }
+        ]
+    }
+}
