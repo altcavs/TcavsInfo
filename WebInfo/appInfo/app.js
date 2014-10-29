@@ -6,7 +6,7 @@ var app = angular.module('appInfo', ['ui.router', 'appInfo.controllers']).
         $stateProvider
             .state("test", {
                 url: "/test",
-                templateUrl: "appInfo/test/test.html",
+                templateUrl: "test/",
                 controller:  "testCtrl as vm"
             })
 
