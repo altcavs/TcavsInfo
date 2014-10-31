@@ -1,6 +1,7 @@
 ﻿'use strict';
-var app = angular.module('appInfo', ['ui.router', 'appInfo.controllers']).
-    config(["$stateProvider", "$urlRouterProvider", function ($stateProvider, $urlRouterProvider) {
+var app = angular.module('appInfo', ['ui.router', 'appInfo.controllers', 'security'])
+
+    .config(["$stateProvider", "$urlRouterProvider", function ($stateProvider, $urlRouterProvider) {
 
         $urlRouterProvider.otherwise("/test");
         $stateProvider
@@ -42,6 +43,11 @@ var app = angular.module('appInfo', ['ui.router', 'appInfo.controllers']).
                 controller: "docflowCtrl"
             });
 
-    }]);
+    }])
+    .run(['$rootScope', 'security', function ($rootScope, security) {
+        //So you can access security variables and methods anywhere
+        $rootScope.security = security; 
+    }])
+;
 
 var appInfoControllers = angular.module('appInfo.controllers', []);
