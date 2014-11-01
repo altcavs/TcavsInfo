@@ -23,6 +23,7 @@ namespace WebInfo
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
                       "~/Scripts/angular.min.js",
                       "~/Scripts/angular-spa-security.js",
+                      "~/Scripts/angular-ui/ui-bootstrap-tpls-{version}.js",
                       "~/Scripts/angular-ui-router.min.js"));
  
            bundles.Add(new ScriptBundle("~/bundles/appInfo")

@@ -1,8 +1,10 @@
 ﻿'use strict';
 var app = angular.module('appInfo', ['ui.router', 'appInfo.controllers', 'security'])
 
-    .config(["$stateProvider", "$urlRouterProvider", function ($stateProvider, $urlRouterProvider) {
-
+    .config(["$stateProvider", "$urlRouterProvider", "securityProvider", function ($stateProvider, $urlRouterProvider, securityProvider) {
+        securityProvider.events.login = function (security, user) {
+            //alert('Hello ' + user.userName);
+        };
         $urlRouterProvider.otherwise("/test");
         $stateProvider
             .state("test", {
