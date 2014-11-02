@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph Layout="Sugiyama" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="fcf19be9-9672-46be-ae0a-2f0cf3fcbd161" Category="Страница" Bounds="181.326111196203,0.329684306383133,102.403333333333,25.96" Label="Вход в систему" UseManualLocation="True" />
+    <Node Id="ДомашняяСтраницаСайта" Category="Comment" Bounds="-28.5023402383507,-0.0858436862178316,165.54,25.96" Label="Домашняя страница сайта" UseManualLocation="True" />
+    <Node Id="Избранное" Category="Страница" Bounds="192.894115397135,115.559219769287,81.6066666666667,25.96" UseManualLocation="True" />
+    <Node Id="Контент" Category="Страница" Bounds="-6.91983250705299,175.003045981091,127.976666666667,25.96" Label="Просмотр контента" UseManualLocation="True" />
+    <Node Id="Контент1" Category="Страница" Bounds="416.105964306,176.562709350586,63.9666666666667,25.96" Label="Контент" UseManualLocation="True" />
+    <Node Id="МенюСайта" Category="Страница" Bounds="20.3015355551312,60.3086033107125,66.3766666666667,25.96" Label="Новости" UseManualLocation="True" />
+    <Node Id="НСИСайта" Category="Страница" Bounds="306.773371040206,117.116389952039,79.7633333333333,25.96" Label="НСИ Сайта" UseManualLocation="True" />
+    <Node Id="Новости" Category="Страница" Bounds="189.54564646403,59.5991197692871,86.6766666666666,25.96" Label="Меню сайта" UseManualLocation="True" />
+    <Node Id="Новости1" Category="Страница" Bounds="317.758478800456,178.936572570801,66.3766666666667,25.96" Label="Новости" UseManualLocation="True" />
+    <Node Id="Пользователи" Category="Страница" Bounds="190.465145467122,176.798434753418,97.2933333333332,25.96" />
+    <Node Id="Статьи" Category="Страница" Bounds="-33.9257889048259,116.268703310713,181.053333333333,25.96" Label="Список контента в категории" />
+  </Nodes>
+  <Links>
+    <Link Source="fcf19be9-9672-46be-ae0a-2f0cf3fcbd161" Target="Новости" Bounds="232.60578068668,26.2896843063831,0.146100472800327,24.3095969578455" />
+    <Link Source="ДомашняяСтраницаСайта" Target="МенюСайта" Bounds="53.7729316156224,25.8741593170166,0.327572423681822,25.435191701594" />
+    <Link Source="НСИСайта" Target="Контент1" Bounds="368.80302383674,143.076389770508,49.3734885298822,28.9357070214355" />
+    <Link Source="НСИСайта" Target="Новости1" Bounds="347.556147398492,143.076389770508,1.86623038043217,26.8817930685756" />
+    <Link Source="НСИСайта" Target="Пользователи" Bounds="270.370351492904,143.076389770508,52.8955512463934,29.3548480097369" />
+    <Link Source="Новости" Target="Избранное" Bounds="233.072664713075,85.5591197692871,0.305283628011011,21.001050755116" />
+    <Link Source="Новости" Target="МенюСайта" Bounds="95.6781301591546,72.7505183483888,93.8675163048754,0.371236217016332" />
+    <Link Source="Новости" Target="НСИСайта" Bounds="258.558847541517,85.5591187286377,54.3893964852122,27.4967089767705" />
+    <Link Source="Новости" Target="Статьи" Bounds="105.54615948777,85.558878579994,86.9614465032538,27.9554228137544" />
+    <Link Source="Статьи" Target="Контент" Bounds="56.7042188172055,142.228703310713,0.189283150470629,23.7746294000851" />
+  </Links>
+  <Categories>
+    <Category Id="Comment" Label="Комментарий" Description="Представляет собой определенный пользователем комментарий к диаграмме" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="Комментарии" />
+    <Category Id="Страница" Label="Страница" IsTag="True" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="IsTag" DataType="System.Boolean" />
+    <Property Id="Label" Label="Метка" Description="Отображаемая метка аннотируемого объекта" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+    <Property Id="ZoomLevel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Комментарий" ValueLabel="Имеет комментарий">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>
