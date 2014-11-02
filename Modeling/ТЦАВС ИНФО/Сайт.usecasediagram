@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="4557ad31-174f-4cc8-9c5e-adca081bd4a7" name="ТЦАВС ИНФО" linkedPackageId="a46af2b3-c12c-4c61-bcb0-c0dbe62c06b0" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="db84bf79-7b9d-4207-a2bc-9701a1a42bdf">
+      <profileInstance Id="dd86c023-ce6e-4670-b686-e17fa88be8eb" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="cc0d7af7-8cf8-45be-b2f8-dbb6ddeea958">
+      <profileInstance Id="ed380d12-77a0-4ce7-b309-7cbeff374cb2" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="cc5ca9ae-8a35-440d-b0ba-939a5b5e39d1" name="Пользователь" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="85b6c96c-ba46-4268-b8c5-c9c3b066548d" />
+        <targetEnds>
+          <association Id="ac73c2dc-407a-474e-b5ff-9668f4874ff4" isDerived="false" sourceEndRoleName="Пользователь" targetEndRoleName="UseCase1" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="189e50d1-cc4b-423e-9cdb-4fe694bc8a68" LastKnownName="Просмотр контента" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dfacd054-ad04-44f5-abec-82db9c2033d1" name="Пользователь" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0795c1d3-070d-4aef-a339-e1ef7280e644" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6eff48f4-c6c0-42f7-996d-0b7284cd6ee7" name="UseCase1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6f89050b-1e25-4f86-aaac-03c7a7025614" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="08c787bc-d8f3-447a-9704-32e1a1fd75de" />
+          </association>
+          <association Id="a0e80a93-ba22-4b5c-80fc-a6ea16cd4310" isDerived="false" sourceEndRoleName="Пользователь" targetEndRoleName="Добавление новостей" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="956ce5ff-2887-4164-8d92-e76b98c66f7d" LastKnownName="Добавление новостей" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5fe58277-23b3-40cc-b4f5-a20c9bb03156" name="Пользователь" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="24358bef-6269-4bba-9a44-109a4a96c48a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bc6aec71-37a1-46d8-b98c-301e9392fbe1" name="Добавление новостей" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="83cdcc41-7920-470f-98e2-8eb471ca3e61" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ded79a5d-3839-44f0-aaa5-fa5eea9127f5" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="eeb96a83-f61c-4836-8131-5e752ea65151" name="Администратор" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cb1bb7c2-0c11-4d1e-8151-69abfe147758" />
+        <targetEnds>
+          <association Id="605d2c9b-6822-494c-a4d9-ea16e4b189eb" isDerived="false" sourceEndRoleName="Администратор" targetEndRoleName="Ведение НСИ" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4e7472e6-4294-4b68-99e7-0b63dbf31386" LastKnownName="Ведение НСИ" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="11f05eeb-9519-4671-8f37-91169450e3ac" name="Администратор" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="55c622ce-621c-4222-a119-f98709d3f376" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b25abe7c-9a00-400d-9042-3afa8ee89d29" name="Ведение НСИ" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9ad163d7-cac0-4ca4-8dac-7960d9aa67b2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="63a17bf3-2715-48c4-9f31-e1b7f654cc86" />
+          </association>
+          <association Id="b403cbf6-974d-4071-b8ca-110031bf3de4" isDerived="false" sourceEndRoleName="Администратор" targetEndRoleName="UseCase1" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="189e50d1-cc4b-423e-9cdb-4fe694bc8a68" LastKnownName="Просмотр контента" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8305fd33-d0b9-47d0-ae34-ce23f5d16832" name="Администратор" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0a8f6905-f7ad-47d6-9d59-9c494016d830" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5ed0f162-6812-4e57-87fb-868f52159a0c" name="UseCase1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="da5accf5-b107-4615-8b8a-5bae2902f47f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3546866c-d12e-4372-af42-3fb2d58ca884" />
+          </association>
+          <association Id="a59063aa-fc34-42a3-a964-5e3eb0fc60a6" isDerived="false" sourceEndRoleName="Администратор" targetEndRoleName="Добавление новостей" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="956ce5ff-2887-4164-8d92-e76b98c66f7d" LastKnownName="Добавление новостей" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8727c6a2-0e33-4c20-864b-0c1c96c660e5" name="Администратор" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ef7227e0-65d8-4751-a1a4-10d75462cac8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="66d7bffe-58f2-4b75-8fd0-15af1b404372" name="Добавление новостей" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="78f5296b-bd47-44bf-91ef-94d7d493ddd6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="74a3cbc0-2eea-46ac-b27e-627ce097b8dd" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="cd7e097d-71ae-42bc-8ced-2a0491a681c5" name="Пользователи" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fdb4e1b8-e8fa-4b73-bc7d-d74e66cdb5ce" />
+        <extendedCases>
+          <extend Id="62b519b1-b525-406f-b79f-c0036d41940a">
+            <useCaseMoniker Id="50202664-3547-4d9e-94a3-13276080bd9a" LastKnownName="Добавление пользователя" />
+            <elementDefinition Id="d2c78183-0670-4d70-9be0-464d60799f16" />
+          </extend>
+          <extend Id="c844973d-f2a0-4b5f-9bf0-b5e1b1130b19">
+            <useCaseMoniker Id="47aba882-45c7-44c3-b9b4-7e8faf8e83b7" LastKnownName="Управление правами пользователя" />
+            <elementDefinition Id="0fab10b9-d4d2-4ae9-a42e-8dfd776a4cf1" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <artifact Id="f900cff7-585a-4179-a961-2a5ef96966a9" name="Список пользователей" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="dc863e4f-1fb1-4287-8167-aac0768ac7a8" />
+      </artifact>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4e7472e6-4294-4b68-99e7-0b63dbf31386" name="Ведение НСИ" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="00e17846-091b-4428-b639-0389bb20e393" />
+        <extendedCases>
+          <extend Id="51e9052c-52ef-44d1-ac5a-2966d9ac81ca">
+            <useCaseMoniker Id="cd7e097d-71ae-42bc-8ced-2a0491a681c5" LastKnownName="Пользователи" />
+            <elementDefinition Id="b1cee35e-208a-4766-9203-2f0f8b731b1b" />
+          </extend>
+          <extend Id="a3ea2771-2610-47e3-ac19-bbc9a700ae30">
+            <useCaseMoniker Id="b6c6c8de-81ad-468d-9a49-6e3f61587b18" LastKnownName="Контент" />
+            <elementDefinition Id="bf989434-9b0f-4b6c-8280-644549300eb4" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="956ce5ff-2887-4164-8d92-e76b98c66f7d" name="Добавление новостей" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c36c11c2-d01e-4086-b587-a3adba33380f" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="189e50d1-cc4b-423e-9cdb-4fe694bc8a68" name="Просмотр контента" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1233eea7-4c6c-42f4-9df7-a5c9d8d5ce79" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <artifact Id="ff2135fe-0eaa-46a0-8464-f2cd3c1f7061" name="Новости" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5c682bb4-90b7-435f-bb31-e788dd0d45f7" />
+        <generalsInternal>
+          <generalization Id="18916025-57ea-4058-a426-455f888d46bf" isSubstitutable="false">
+            <artifactMoniker Id="d3baad5a-d03b-421b-83aa-448480e82e5a" LastKnownName="Контент" />
+            <elementDefinition Id="5c34ff3a-61ad-405c-8763-edd72db7f9b9" />
+          </generalization>
+        </generalsInternal>
+      </artifact>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="50202664-3547-4d9e-94a3-13276080bd9a" name="Добавление пользователя" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e983e396-a56a-4504-9434-1b9296d63116" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="47aba882-45c7-44c3-b9b4-7e8faf8e83b7" name="Управление правами пользователя" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b0524b9d-0e71-44c1-8bad-9a172db5b522" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b6c6c8de-81ad-468d-9a49-6e3f61587b18" name="Контент" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0d92b0c2-235c-4f62-9563-0cee25695d21" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <artifact Id="d3baad5a-d03b-421b-83aa-448480e82e5a" name="Контент" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4c315bf2-2a3f-4762-918e-f601c64f3666" />
+      </artifact>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <artifact Id="f00d1f4b-6ea8-4b2c-ae16-06e0e4550c23" name="Категории" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f327b927-8c5d-4b39-ba07-ad849bb04b09" />
+        <generalsInternal>
+          <generalization Id="5aa39c9a-8900-43c2-87b6-b4a435a27dbb" isSubstitutable="false">
+            <artifactMoniker Id="d3baad5a-d03b-421b-83aa-448480e82e5a" LastKnownName="Контент" />
+            <elementDefinition Id="a8d63fe9-8daa-43dd-9006-8aa10df9df92" />
+          </generalization>
+        </generalsInternal>
+      </artifact>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <artifact Id="9474b446-ff05-4c95-9a3e-937bceaee530" name="Статьи" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0b1e79d3-75b7-4380-ad53-0a535fb51eee" />
+        <generalsInternal>
+          <generalization Id="8eafa67f-d0bb-4ffb-a84b-c7ea4ccb18cd" isSubstitutable="false">
+            <artifactMoniker Id="d3baad5a-d03b-421b-83aa-448480e82e5a" LastKnownName="Контент" />
+            <elementDefinition Id="3a94d94b-2e93-48b6-8868-e8d435ee4515" />
+          </generalization>
+        </generalsInternal>
+      </artifact>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <artifact Id="7e0c8df5-c4ae-46f5-af4f-b2d96ecf0711" name="Права пользователей" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5208dfb9-a827-4816-a6b6-f9b9ad9ea104" />
+      </artifact>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="a46af2b3-c12c-4c61-bcb0-c0dbe62c06b0" name="Modeling">
+    <elementDefinition Id="72ad19be-cb9c-4f7c-adea-3e9bc118c836" />
+  </package>
+</useCaseModelRoot>
