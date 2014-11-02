@@ -7,17 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebInfo", "WebInfo\WebInfo.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebInfo.Tests", "WebInfo.Tests\WebInfo.Tests.csproj", "{224BE232-4999-4960-AC43-187AD287A377}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{5AF2B0CA-7F66-401C-AC65-B62122E8013D}"
-	ProjectSection(SolutionItems) = preProject
-		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
-		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{C13C167A-F511-49B9-9EF1-F0806CD5EC98}"
-	ProjectSection(SolutionItems) = preProject
-		PublishScripts\Configurations\WebInfo-WAWS-dev.json = PublishScripts\Configurations\WebInfo-WAWS-dev.json
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,8 +24,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{C13C167A-F511-49B9-9EF1-F0806CD5EC98} = {5AF2B0CA-7F66-401C-AC65-B62122E8013D}
 	EndGlobalSection
 EndGlobal

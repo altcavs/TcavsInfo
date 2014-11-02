@@ -21,6 +21,7 @@
         vm.message = "Processing Login...";
         security.login(vm.user).then(function (user) {
             //Success
+            toastr.success("Login Successful");
             console.log(user);
             vm.message = null;
             //Automatically sends them back to the page they were trying to access or the home page
