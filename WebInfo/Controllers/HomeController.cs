@@ -14,6 +14,15 @@ namespace WebInfo.Controllers
 
             return View();
         }
+        public ActionResult Shell()
+        {
+             return View();
+        }
+
+        public ActionResult Test()
+        {
+            return View();
+        }
 
     }
 }

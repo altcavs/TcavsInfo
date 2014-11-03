@@ -30,6 +30,7 @@ namespace WebInfo
  
            bundles.Add(new ScriptBundle("~/bundles/appInfo")
                 .IncludeDirectory("~/appInfo/", "*.js")
+                .IncludeDirectory("~/appInfo/shell/", "*.js")
                 .IncludeDirectory("~/appInfo/test/", "*.js")
                 );
 

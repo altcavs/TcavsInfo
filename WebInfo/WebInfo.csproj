@@ -198,7 +198,6 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -213,7 +212,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="appInfo\app.js" />
-    <Content Include="appInfo\test\test.html" />
+    <Content Include="appInfo\shell\shell.js" />
     <Content Include="appInfo\test\test.js" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap.css" />
@@ -557,8 +556,9 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\Test\Index.cshtml" />
+    <Content Include="Views\Home\Test.cshtml" />
     <Content Include="Scripts\toastr.min.js.map" />
+    <Content Include="Views\Home\Shell.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -5,11 +5,19 @@ var app = angular.module('appInfo', ['ui.router', 'appInfo.controllers', 'securi
         securityProvider.events.login = function (security, user) {
             //alert('Hello ' + user.userName);
         };
-        $urlRouterProvider.otherwise("/test");
+        //$urlRouterProvider.otherwise("/test");
         $stateProvider
+            .state("home", {
+                name: "home",
+                url: "/",
+                templateUrl: "home/shell",
+                controller: "homeCtrl as vm"
+            })
+
             .state("test", {
-                url: "/test",
-                templateUrl: "test/",
+                url: "test",
+                parent: "home",
+                templateUrl: "home/test",
                 controller:  "testCtrl as vm"
             })
 
@@ -46,9 +54,11 @@ var app = angular.module('appInfo', ['ui.router', 'appInfo.controllers', 'securi
             });
 
     }])
-    .run(['$rootScope', 'security', function ($rootScope, security) {
+    .run(['$rootScope', 'security','$state', function ($rootScope, security, $state) {
         //So you can access security variables and methods anywhere
-        $rootScope.security = security; 
+        $rootScope.security = security;
+        $state.transitionTo('test'); 
+
     }])
 ;
 
