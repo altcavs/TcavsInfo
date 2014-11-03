@@ -212,6 +212,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="appInfo\app.js" />
+    <Content Include="appInfo\shell\login.js" />
     <Content Include="appInfo\shell\shell.js" />
     <Content Include="appInfo\test\test.js" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
@@ -559,6 +560,7 @@
     <Content Include="Views\Home\Test.cshtml" />
     <Content Include="Scripts\toastr.min.js.map" />
     <Content Include="Views\Home\Shell.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

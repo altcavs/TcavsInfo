@@ -1,7 +1,7 @@
 ﻿angular.module('appInfo.controllers').controller('testCtrl', ['security', '$http', function (security, $http) {
 
     var vm = this;
-    security.redirectAuthenticated('/');
+    security.redirectAuthenticated('/test');
     var User = function () {
         return {
             username: '',

@@ -1,4 +1,4 @@
-﻿angular.module('appInfo.controllers').controller('homeCtrl', [function () {
+﻿angular.module('appInfo.controllers').controller('shellCtrl', [function () {
 
     var vm = this;
  

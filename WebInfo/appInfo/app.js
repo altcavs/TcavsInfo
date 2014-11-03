@@ -7,16 +7,22 @@ var app = angular.module('appInfo', ['ui.router', 'appInfo.controllers', 'securi
         };
         //$urlRouterProvider.otherwise("/test");
         $stateProvider
-            .state("home", {
-                name: "home",
+            .state("login", {
+                name: "login",
+                url: "/login",
+                templateUrl: "home/login",
+                controller: "loginCtrl as vm"
+            })
+            .state("shell", {
+                name: "shell",
                 url: "/",
                 templateUrl: "home/shell",
-                controller: "homeCtrl as vm"
+                controller: "shellCtrl as vm"
             })
 
             .state("test", {
                 url: "test",
-                parent: "home",
+                parent: "shell",
                 templateUrl: "home/test",
                 controller:  "testCtrl as vm"
             })
