@@ -273,6 +273,7 @@
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
     <Content Include="Content\toastr.scss" />
     <Content Include="Content\toastr.less" />
+    <Content Include="Content\site.scss" />
     <None Include="Properties\PublishProfiles\WebInfo.pubxml" />
     <Content Include="Scripts\errors.json" />
     <Content Include="Scripts\angular-touch.min.js.map" />
@@ -549,7 +550,6 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
-    <Content Include="Content\Site.css" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />

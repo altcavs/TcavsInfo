@@ -1,0 +1,300 @@
+$nav_color: #428bca;
+$nav_select_color: #46aaed;
+
+body {
+  padding-top: 65px;
+  background-color: #F6F6F6;
+}
+
+/*
+ * Navbar
+ */
+.navbar-custom {
+  background-color: $nav_color;
+  color: white;
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav>li>a {
+  color: #f5f5f5;
+}
+
+.navbar-custom .navbar-brand:hover{
+  color: white;
+}
+
+.navbar-custom .navbar-nav>li>a:hover,
+.navbar-custom .navbar-nav>.active>a:hover
+{
+  color: white;
+  background-color: $nav_select_color;
+}
+
+.navbar-custom .navbar-nav>.active>a,
+.navbar-custom .navbar-nav>.active>a:hover,
+.navbar-custom .navbar-nav>.active>a:focus{
+  background-color: $nav_color;
+
+}
+
+.navbar-custom .navbar-nav>.active>a,
+ .navbar-custom .navbar-nav>.active>a:focus{
+
+   color: white;
+ }
+
+
+.navbar-custom .navbar-nav>.active>:after{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+  vertical-align: middle;
+  content: " ";
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid;
+  border-left: 5px solid transparent;
+}
+
+.navbar-custom .navbar-nav>.open>a,
+.navbar-custom .navbar-nav>.open>a:hover,
+.navbar-custom .navbar-nav>.open>a:focus{
+  background-color: $nav_select_color;
+  color: white;
+
+}
+.navbar-custom .dropdown-menu,
+.navbar-custom .navbar-nav .open .dropdown-menu>li>a{
+  background-color: $nav_color;
+  color: white;
+}
+
+.navbar-custom .navbar-nav .open .dropdown-menu>li>a:hover{
+  background-color: $nav_select_color;
+  color: white;
+}
+
+// http://foxypixel.net/cleanzone/pages-login.html
+
+.white-box {
+  background: #FFF;
+}
+
+.widget-block {
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.21);
+  border: 0;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+.widget-block .padding {
+  padding: 20px 20px;
+}
+
+
+.block .header,
+.widget-block .header,
+.block-flat .header {
+  padding: 10px;
+  background-color: #FEFEFE;
+  border-bottom: 1px solid #dadada;
+}
+
+.block-flat,
+.block-wizard {
+  margin-bottom: 20px;
+  padding: 20px 20px;
+  background: #FFF;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-left: 1px solid #efefef;
+  border-right: 1px solid #efefef;
+  border-bottom: 1px solid #e2e2e2;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.04);
+}
+.block-flat .header {
+  background: transparent;
+  padding: 3px 0;
+}
+
+.block-flat .header.no-border {
+  border: 0;
+}
+.block-flat .header h3 {
+  margin-top: 3px;
+  font-family: "Raleway", Helvetica, sans-serif;
+  font-weight: 200;
+}
+.block-flat .content {
+  padding: 15px 3px 0 3px;
+}
+.block-flat .content.full-width {
+  padding: 0;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: -20px;
+}
+.block-flat .content h4 {
+  margin-top: 20px;
+  font-size: 16px;
+}
+.block-flat .content .title {
+  margin: 5px 0 15px 0;
+}
+
+.block-flat .footer{
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #dadada;
+  text-align: right;
+
+}
+
+// http://beer2code.com/themes/core-admin-3/pages/dashboard/dashboard.html
+
+.news-title {
+  color: #636364;
+  font-weight: 600;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+  font-size: 18px; }
+.news-title a {
+  color: #78808a; }
+.news-title a:hover, a:active, a:focus {
+  cursor: pointer;
+  outline: 0px none;
+  text-decoration: none;
+  color: #5a6573; }
+.news-content {
+  margin-bottom: 10px;
+  padding-left: 10px;
+ }
+// http://ashobiz.asia/onecolor31/blue/index.html
+
+/* Sidebar */
+
+.padd{ padding: 10px; }
+
+.sidebar h3{
+  font-size:24px;
+  margin-bottom:8px;
+  cursor:pointer;
+  padding-bottom:8px;
+  border-bottom:1px solid #ddd;
+}
+
+.sidebar ul{
+  list-style-type:none;
+  margin:0px;
+  margin-left:-20px;
+}
+
+.sidebar li{
+  padding:4px 0px;
+  border-bottom:1px dashed #ddd;
+}
+
+.sidebar a, .sidebar a:visited, .sidebar a:hover{
+  color:#666;
+  text-decoration:none;
+}
+
+.widget{
+  padding:10px 0px;
+}
+
+
+/*
+ * Side navigation
+ *
+ * Scrollspy and affixed enhanced navigation to highlight sections and secondary
+ * sections of docs content.
+ */
+
+/* By default it's not affixed in mobile views, so undo that */
+.bs-sidebar.affix {
+  position: static;
+  margin-bottom: 20px;
+  padding: 20px 20px;
+  background: #FFF;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-left: 1px solid #efefef;
+  border-right: 1px solid #efefef;
+  border-bottom: 1px solid #e2e2e2;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.04);
+}
+
+/* First level of nav */
+.bs-sidenav {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top:    10px;
+  padding-bottom: 10px;
+  text-shadow: 0 1px 0 #fff;
+  background-color: #f7f5fa;
+  border-radius: 5px;
+}
+
+/* All levels of nav */
+.bs-sidebar .nav > li > a {
+  display: block;
+  color: #716b7a;
+  padding: 5px 20px;
+}
+.bs-sidebar .nav > li > a:hover,
+.bs-sidebar .nav > li > a:focus {
+  text-decoration: none;
+  background-color: #e5e3e9;
+  border-right: 1px solid #dbd8e0;
+}
+.bs-sidebar .nav > .active > a,
+.bs-sidebar .nav > .active:hover > a,
+.bs-sidebar .nav > .active:focus > a {
+  font-weight: bold;
+  color: #563d7c;
+  background-color: transparent;
+  border-right: 1px solid #563d7c;
+}
+
+/* Nav: second level (shown on .active) */
+.bs-sidebar .nav .nav {
+  display: none; /* Hide by default, but at >768px, show it */
+  margin-bottom: 8px;
+}
+.bs-sidebar .nav .nav > li > a {
+  padding-top:    3px;
+  padding-bottom: 3px;
+  padding-left: 30px;
+  font-size: 90%;
+}
+
+/* Show and affix the side nav when space allows it */
+@media screen and (min-width: 992px) {
+  .bs-sidebar .nav > .active > ul {
+    display: block;
+  }
+  /* Widen the fixed sidebar */
+  .bs-sidebar.affix,
+  .bs-sidebar.affix-bottom {
+    width: 233px;
+  }
+  .bs-sidebar.affix {
+    position: fixed; /* Undo the static from mobile first approach */
+    //top: 60px;
+  }
+  .bs-sidebar.affix-bottom {
+    position: absolute; /* Undo the static from mobile first approach */
+  }
+  .bs-sidebar.affix-bottom .bs-sidenav,
+  .bs-sidebar.affix .bs-sidenav {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* Widen the fixed sidebar again */
+  .bs-sidebar.affix-bottom,
+  .bs-sidebar.affix {
+    width: 280px;
+  }
+}
