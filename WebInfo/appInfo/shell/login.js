@@ -8,6 +8,9 @@
             password: ''
         }
     };
+
+    vm.user = new User();
+
     vm.login = function () {
         vm.message = "Processing Login...";
         security.login(vm.user).then(function (user) {
