@@ -10,26 +10,19 @@ var app = angular.module('appInfo', ['ui.router', 'appInfo.controllers', 'securi
             .state("login", {
                 name: "login",
                 url: "/login",
-                templateUrl: "home/login",
+                templateUrl: "shell/login",
                 controller: "loginCtrl as vm"
             })
             .state("shell", {
                 name: "shell",
                 url: "/",
-                templateUrl: "home/shell",
+                templateUrl: "shell/shell",
                 controller: "shellCtrl as vm"
             })
-
-            .state("test", {
-                url: "test",
-                parent: "shell",
-                templateUrl: "home/test",
-                controller:  "testCtrl as vm"
-            })
-
             .state("news", {
-                url: "/news",
-                templateUrl: "app/partials/news.html",
+                url: "news",
+                parent: "shell",
+                templateUrl: "shell/news",
                 controller: "newsCtrl"
             })
 
@@ -57,13 +50,19 @@ var app = angular.module('appInfo', ['ui.router', 'appInfo.controllers', 'securi
                 url: "/docflow",
                 templateUrl: "app/partials/docflow.html",
                 controller: "docflowCtrl"
+            })
+            .state("test", {
+                url: "test",
+                parent: "shell",
+                templateUrl: "home/test",
+                controller: "testCtrl as vm"
             });
 
     }])
     .run(['$rootScope', 'security','$state', function ($rootScope, security, $state) {
         //So you can access security variables and methods anywhere
         $rootScope.security = security;
-        $state.transitionTo('test'); 
+        $state.transitionTo('news'); 
 
     }])
 ;

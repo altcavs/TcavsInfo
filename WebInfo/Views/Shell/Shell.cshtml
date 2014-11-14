@@ -1,0 +1,18 @@
+﻿@{
+    Layout = null;
+}
+
+@{ Html.RenderAction("Menu", "Shell"); }
+
+<div class="container body-content">
+    <div class="row">
+        <div class="col-sm-3 block-flat">
+             @{ Html.RenderAction("Sidebar", "Shell"); }
+        </div>
+        <div class="col-md-9" role="main" data-ui-view></div>
+    </div>
+    <hr />
+    <footer>
+        <p>&copy; @DateTime.Now.Year – Кудрявцев Алексей</p>
+    </footer>
+</div>
