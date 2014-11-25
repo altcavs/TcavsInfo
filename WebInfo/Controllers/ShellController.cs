@@ -33,9 +33,16 @@ namespace WebInfo.Controllers
                 new Category {Name = "Учет движения кадров",Subcategories = new Category[0]},
                 new Category {Name = "Настройка графиков работы",Subcategories = new Category[0]}
                 };
-
-
-            return PartialView(submenu_staff);
+            var submenu_salary = new Category[] {
+                new Category {Name = "Учет персональных данных",Subcategories = new Category[0]},
+                new Category {Name = "Учет движения кадров",Subcategories = new Category[0]},
+                new Category {Name = "Настройка графиков работы",Subcategories = new Category[0]}
+                };
+            var submenu = new Category[] {
+                new Category {Name = "Кадры",Subcategories = submenu_staff},
+                new Category {Name = "Зарплата",Subcategories =submenu_salary}
+                };
+            return PartialView(submenu);
         }
         public ActionResult Login()
         {
