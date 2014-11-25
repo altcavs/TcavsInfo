@@ -1,6 +1,10 @@
-﻿angular.module('appInfo.controllers').controller('newsCtrl', ['security', function (Security) {
-
+﻿/// <reference path="news.js" />
+angular.module('appInfo.controllers').controller('newsCtrl', ['newsData', function (newsData) {
+    //console.log("Из Контроллера новостей");
     var vm = this;
-    Security.authenticate();
- 
+    vm.test = 'newsCtrl';
+    vm.news = [];
+    vm.news = newsData.query();
+   console.log(vm.news);
+
 }]);

@@ -1,5 +1,5 @@
 ﻿'use strict';
-var app = angular.module('appInfo', ['ui.router', 'appInfo.controllers', 'security'])
+var app = angular.module('appInfo', ['ui.router', 'appInfo.controllers', 'security', 'appInfo.services'])
 
     .config(["$stateProvider", "$urlRouterProvider", "securityProvider", function ($stateProvider, $urlRouterProvider, securityProvider) {
         securityProvider.events.login = function (security, user) {
@@ -23,7 +23,7 @@ var app = angular.module('appInfo', ['ui.router', 'appInfo.controllers', 'securi
                 url: "news",
                 parent: "shell",
                 templateUrl: "shell/news",
-                controller: "newsCtrl"
+                controller: "newsCtrl as vm"
             })
 
             .state("staff", {
