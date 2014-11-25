@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
+using WebInfo.Models.Domain;
+
 namespace WebInfo.Controllers
 {
     public class ShellController : Controller
@@ -20,11 +22,20 @@ namespace WebInfo.Controllers
         }
         public ActionResult Menu()
         {
+
+       
             return PartialView();
         }
         public ActionResult Sidebar()
         {
-            return PartialView();
+            var submenu_staff = new Category [] {
+                new Category {Name = "Учет персональных данных",Subcategories = new Category[0]},
+                new Category {Name = "Учет движения кадров",Subcategories = new Category[0]},
+                new Category {Name = "Настройка графиков работы",Subcategories = new Category[0]}
+                };
+
+
+            return PartialView(submenu_staff);
         }
         public ActionResult Login()
         {

@@ -1,11 +1,17 @@
-﻿<div class="paad sidebar">
+﻿@using  WebInfo.Models.Domain;
+@model Category[]
+
+<div class="paad sidebar">
     <div class="widget">
-        <h4 class="matopen">Заголовок</h4>
+        @foreach (Category menu in Model) { 
+        <h4 class="matopen">@menu.Name</h4>
         <div class="matter">
             <ul>
-                <li><a href="#">меню</a></li>
-                <li><a href="#">меню</a></li>
+                @foreach (Category smenu in menu.Subcategories) {
+                    <li><a href="#">Ghbvth</a></li>
+                }
             </ul>
         </div>
+        }
     </div>
 </div>

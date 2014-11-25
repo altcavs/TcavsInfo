@@ -1,19 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="4557ad31-174f-4cc8-9c5e-adca081bd4a7" name="ТЦАВС ИНФО" linkedPackageId="a46af2b3-c12c-4c61-bcb0-c0dbe62c06b0" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
-  <profileInstances>
-    <packageHasProfileInstances Id="db84bf79-7b9d-4207-a2bc-9701a1a42bdf">
-      <profileInstance Id="dd86c023-ce6e-4670-b686-e17fa88be8eb" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="cc0d7af7-8cf8-45be-b2f8-dbb6ddeea958">
-      <profileInstance Id="ed380d12-77a0-4ce7-b309-7cbeff374cb2" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
+  <ownedCommentsInternal>
+    <comment Id="b87efee9-f808-4d97-8393-ed1e707c288c">
+      <elementDefinition Id="1c949ee2-4370-4786-89b5-410331c5689d" />
+      <body>Можно предусмотреть важность новостей
+</body>
+    </comment>
+  </ownedCommentsInternal>
   <packagedElements>
     <useCaseModelRootHasTypes>
       <actor Id="cc5ca9ae-8a35-440d-b0ba-939a5b5e39d1" name="Пользователь" isAbstract="false" isLeaf="false">
@@ -188,12 +181,6 @@
     <useCaseModelRootHasTypes>
       <artifact Id="f00d1f4b-6ea8-4b2c-ae16-06e0e4550c23" name="Категории" isAbstract="false" isLeaf="false">
         <elementDefinition Id="f327b927-8c5d-4b39-ba07-ad849bb04b09" />
-        <generalsInternal>
-          <generalization Id="5aa39c9a-8900-43c2-87b6-b4a435a27dbb" isSubstitutable="false">
-            <artifactMoniker Id="d3baad5a-d03b-421b-83aa-448480e82e5a" LastKnownName="Контент" />
-            <elementDefinition Id="a8d63fe9-8daa-43dd-9006-8aa10df9df92" />
-          </generalization>
-        </generalsInternal>
       </artifact>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
@@ -212,8 +199,38 @@
         <elementDefinition Id="5208dfb9-a827-4816-a6b6-f9b9ad9ea104" />
       </artifact>
     </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <artifact Id="7c61b620-5095-4bbb-a30c-0233811a6bf4" name="Избранное" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="517991b2-c0fa-4088-9eb1-4a9e5243a9dd" />
+      </artifact>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <artifact Id="277d7636-8b09-4314-9c49-ecdba54a1584" name="Видео" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8f5c02a8-f2b5-475b-94a9-e5e688cb4073" />
+        <generalsInternal>
+          <generalization Id="33a2e8c9-c20c-424c-8777-43e1d5c520ec" isSubstitutable="false">
+            <artifactMoniker Id="d3baad5a-d03b-421b-83aa-448480e82e5a" LastKnownName="Контент" />
+            <elementDefinition Id="52067f31-d213-40be-b75c-ad3d4794f7f0" />
+          </generalization>
+        </generalsInternal>
+      </artifact>
+    </useCaseModelRootHasTypes>
   </packagedElements>
   <package Id="a46af2b3-c12c-4c61-bcb0-c0dbe62c06b0" name="Modeling">
     <elementDefinition Id="72ad19be-cb9c-4f7c-adea-3e9bc118c836" />
+    <profileInstances>
+      <packageHasProfileInstances Id="db84bf79-7b9d-4207-a2bc-9701a1a42bdf">
+        <profileInstance Id="dd86c023-ce6e-4670-b686-e17fa88be8eb" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="cc0d7af7-8cf8-45be-b2f8-dbb6ddeea958">
+        <profileInstance Id="ed380d12-77a0-4ce7-b309-7cbeff374cb2" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </useCaseModelRoot>

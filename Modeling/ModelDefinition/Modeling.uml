@@ -3,6 +3,13 @@
   dslVersion="1.0.0.0"
   Id="72ad19be-cb9c-4f7c-adea-3e9bc118c836"
   name="Modeling" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="1c949ee2-4370-4786-89b5-410331c5689d">
+      <body>Можно предусмотреть важность новостей
+</body>
+    </comment>
+  </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances
       Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
@@ -353,18 +360,7 @@
         Id="f327b927-8c5d-4b39-ba07-ad849bb04b09"
         name="Категории"
         isAbstract="false"
-        isLeaf="false">
-        <generalsInternal>
-          <generalization
-            Id="a8d63fe9-8daa-43dd-9006-8aa10df9df92"
-            isSubstitutable="false">
-            <artifactMoniker
-              Id="4c315bf2-2a3f-4762-918e-f601c64f3666"
-              LastKnownName="Контент"
-              LastKnownLocation="Modeling.uml" />
-          </generalization>
-        </generalsInternal>
-      </artifact>
+        isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <artifact
@@ -390,6 +386,31 @@
         name="Права пользователей"
         isAbstract="false"
         isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <artifact
+        Id="517991b2-c0fa-4088-9eb1-4a9e5243a9dd"
+        name="Избранное"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <artifact
+        Id="8f5c02a8-f2b5-475b-94a9-e5e688cb4073"
+        name="Видео"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="52067f31-d213-40be-b75c-ad3d4794f7f0"
+            isSubstitutable="false">
+            <artifactMoniker
+              Id="4c315bf2-2a3f-4762-918e-f601c64f3666"
+              LastKnownName="Контент"
+              LastKnownLocation="Modeling.uml" />
+          </generalization>
+        </generalsInternal>
+      </artifact>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
