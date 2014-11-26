@@ -1,5 +1,5 @@
 ﻿'use strict';
-var app = angular.module('appInfo', ['ui.router', 'appInfo.controllers', 'security', 'appInfo.services'])
+var app = angular.module('appInfo', ['ui.router', 'appInfo.controllers', 'security'])
 
     .config(["$stateProvider", "$urlRouterProvider", "securityProvider", function ($stateProvider, $urlRouterProvider, securityProvider) {
         securityProvider.events.login = function (security, user) {
