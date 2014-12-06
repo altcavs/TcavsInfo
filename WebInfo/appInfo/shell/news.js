@@ -4,7 +4,9 @@ angular.module('appInfo.controllers').controller('newsCtrl', ['newsData', functi
     var vm = this;
     vm.test = 'newsCtrl';
     vm.news = [];
-    vm.news = newsData.query();
+    newsData.success(function (data) {
+        vm.news = data
+    });;
    console.log(vm.news);
 
 }]);
