@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.75, 8.5" name="UMLUseCaseDiagram1">
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.875, 8.5" name="UMLUseCaseDiagram1">
   <useCaseModelRootMoniker Id="4557ad31-174f-4cc8-9c5e-adca081bd4a7" />
   <nestedChildShapes>
     <actorShape Id="4001f0ca-f00f-4112-842a-f706bfa34d9b" absoluteBounds="0.875, 1, 0.5, 0.5" isReference="false" heightOffset="0">
@@ -17,22 +17,22 @@
     <artifactShape Id="11cfad30-4ebe-40d4-93f5-9dbb0706596a" absoluteBounds="0.75, 5.5, 1.5, 0.5" customColor="161, 199, 231">
       <artifactMoniker Id="f900cff7-585a-4179-a961-2a5ef96966a9" LastKnownName="Список пользователей" />
     </artifactShape>
-    <useCaseShape Id="c9e31214-8811-4d70-b79a-37d8936c034c" absoluteBounds="2.625, 2.875, 1.875, 0.5" customColor="238, 237, 131" heightOffset="0">
+    <useCaseShape Id="c9e31214-8811-4d70-b79a-37d8936c034c" absoluteBounds="2.875, 2.875, 1.875, 0.5" customColor="238, 237, 131" heightOffset="0">
       <useCaseMoniker Id="4e7472e6-4294-4b68-99e7-0b63dbf31386" LastKnownName="Ведение НСИ" />
       <relativeChildShapes />
     </useCaseShape>
-    <extendConnector edgePoints="[(4.36639961785551 : 2.99637606114312); (5.80889059155113 : 2.76557750535182)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black" useCaseStereotype="«расширить»">
+    <extendConnector edgePoints="[(4.5977599345362 : 2.98843305486327); (5.83306284969203 : 2.77359776527095)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«расширить»">
       <extendMoniker Id="51e9052c-52ef-44d1-ac5a-2966d9ac81ca" />
       <relativeChildShapes />
       <moveableDecoratorHostShapes>
-        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="4.4900335459479264, 2.6183472314534191, 0.73641848564147949, 0.14800345897674561" shapeFieldName="NameDecorator" />
+        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="4.5268466207747933, 2.6384728007090414, 0.73641848564147949, 0.14800345897674561" shapeFieldName="NameDecorator" />
       </moveableDecoratorHostShapes>
       <nodes>
         <useCaseShapeMoniker Id="c9e31214-8811-4d70-b79a-37d8936c034c" />
         <useCaseShapeMoniker Id="f38640d4-1499-486d-b58d-da7dd2afb2a8" />
       </nodes>
     </extendConnector>
-    <useCaseAssociationConnector edgePoints="[(1.375 : 3.01282051282051); (2.64186895595564 : 3.07778815158747)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+    <useCaseAssociationConnector edgePoints="[(1.375 : 3.01162790697674); (2.88894290965807 : 3.08204385626317)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
       <associationMoniker Id="605d2c9b-6822-494c-a4d9-ea16e4b189eb" />
       <relativeChildShapes />
       <nodes>
@@ -52,7 +52,7 @@
         <useCaseShapeMoniker Id="333eba0d-454b-4f36-9730-4eb4ae667a9c" />
       </nodes>
     </useCaseAssociationConnector>
-    <useCaseAssociationConnector edgePoints="[(1.375 : 2.92222222222222); (3.27198342438372 : 2.33204960130284)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+    <useCaseAssociationConnector edgePoints="[(1.375 : 2.92222222222222); (3.27198342438372 : 2.33204960130284)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
       <associationMoniker Id="a59063aa-fc34-42a3-a964-5e3eb0fc60a6" />
       <relativeChildShapes />
       <nodes>
@@ -83,30 +83,30 @@
     <artifactShape Id="cd162a05-d856-4049-ae17-2e4b3231b105" absoluteBounds="6, 6.75, 1.5, 0.5" customColor="161, 199, 231">
       <artifactMoniker Id="ff2135fe-0eaa-46a0-8464-f2cd3c1f7061" LastKnownName="Новости" />
     </artifactShape>
-    <useCaseShape Id="ffdc8819-5b5e-4d00-aa95-ee2523bdf3d7" absoluteBounds="8.5, 1.5, 2.875, 0.75" customColor="238, 237, 131" heightOffset="0">
+    <useCaseShape Id="ffdc8819-5b5e-4d00-aa95-ee2523bdf3d7" absoluteBounds="8.75, 1.75, 2.875, 0.75" customColor="238, 237, 131" heightOffset="0">
       <useCaseMoniker Id="50202664-3547-4d9e-94a3-13276080bd9a" LastKnownName="Добавление пользователя" />
       <relativeChildShapes />
     </useCaseShape>
-    <extendConnector edgePoints="[(7.44605938913351 : 2.44994783327688); (8.86081744142008 : 2.12346520582614)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black" useCaseStereotype="«расширить»">
+    <extendConnector edgePoints="[(7.59571173492309 : 2.49525546643956); (8.92667411497784 : 2.30511798357459)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«расширить»">
       <extendMoniker Id="62b519b1-b525-406f-b79f-c0036d41940a" />
       <relativeChildShapes />
       <moveableDecoratorHostShapes>
-        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="7.5625, 2, 0.73641848564147949, 0.14800345897674561" shapeFieldName="NameDecorator" />
+        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="7.7422868063499681, 2.0877600137157715, 0.73641848564147949, 0.14800345897674561" shapeFieldName="NameDecorator" />
       </moveableDecoratorHostShapes>
       <nodes>
         <useCaseShapeMoniker Id="f38640d4-1499-486d-b58d-da7dd2afb2a8" />
         <useCaseShapeMoniker Id="ffdc8819-5b5e-4d00-aa95-ee2523bdf3d7" />
       </nodes>
     </extendConnector>
-    <useCaseShape Id="a6a2a1eb-18b0-4b49-a8a6-5ea2854dca80" absoluteBounds="8.625, 2.5, 2.875, 0.75" customColor="238, 237, 131" heightOffset="0">
+    <useCaseShape Id="a6a2a1eb-18b0-4b49-a8a6-5ea2854dca80" absoluteBounds="8.75, 2.875, 2.875, 0.75" customColor="238, 237, 131" heightOffset="0">
       <useCaseMoniker Id="47aba882-45c7-44c3-b9b4-7e8faf8e83b7" LastKnownName="Управление правами пользователя" />
       <relativeChildShapes />
     </useCaseShape>
-    <extendConnector edgePoints="[(7.7009648289104 : 2.70007146880818); (8.67966693750198 : 2.77256792129644)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black" useCaseStereotype="«расширить»">
+    <extendConnector edgePoints="[(7.53385898816674 : 2.7761355336012); (9.00129402715942 : 3.0381775048499)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«расширить»">
       <extendMoniker Id="c844973d-f2a0-4b5f-9bf0-b5e1b1130b19" />
       <relativeChildShapes />
       <moveableDecoratorHostShapes>
-        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="7.625, 2.8125, 0.73641848564147949, 0.14800345897674561" shapeFieldName="NameDecorator" />
+        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="7.43722653151562, 2.9175614921495874, 0.73641848564147949, 0.14800345897674561" shapeFieldName="NameDecorator" />
       </moveableDecoratorHostShapes>
       <nodes>
         <useCaseShapeMoniker Id="f38640d4-1499-486d-b58d-da7dd2afb2a8" />
@@ -117,11 +117,11 @@
       <useCaseMoniker Id="b6c6c8de-81ad-468d-9a49-6e3f61587b18" LastKnownName="Контент" />
       <relativeChildShapes />
     </useCaseShape>
-    <extendConnector edgePoints="[(4.3620480975715 : 3.25553846490963); (6.14969727175451 : 3.54739955457216)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«расширить»">
+    <extendConnector edgePoints="[(4.59254715094173 : 3.26367504905631); (6.15389265486043 : 3.5412475830863)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«расширить»">
       <extendMoniker Id="a3ea2771-2610-47e3-ac19-bbc9a700ae30" />
       <relativeChildShapes />
       <moveableDecoratorHostShapes>
-        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="4.625, 3.4375, 0.73641848564147949, 0.14800345897674561" shapeFieldName="NameDecorator" />
+        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="4.851826770280848, 3.454511594655703, 0.73641848564147949, 0.14800345897674561" shapeFieldName="NameDecorator" />
       </moveableDecoratorHostShapes>
       <nodes>
         <useCaseShapeMoniker Id="c9e31214-8811-4d70-b79a-37d8936c034c" />
@@ -131,7 +131,7 @@
     <artifactShape Id="a793c2a1-5baf-4f05-be3c-e04b7d8e26a5" absoluteBounds="4.25, 5.5, 1.5, 0.5" customColor="161, 199, 231">
       <artifactMoniker Id="d3baad5a-d03b-421b-83aa-448480e82e5a" LastKnownName="Контент" />
     </artifactShape>
-    <useCaseGeneralizationConnector edgePoints="[(6.4 : 6.75); (5.35 : 6)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+    <useCaseGeneralizationConnector edgePoints="[(6.4 : 6.75); (5.35 : 6)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
       <generalizationMoniker Id="18916025-57ea-4058-a426-455f888d46bf" />
       <relativeChildShapes />
       <nodes>
@@ -145,7 +145,7 @@
     <artifactShape Id="edacaacb-fff6-489c-a2ff-3277a4a365af" absoluteBounds="4.25, 6.75, 1.5, 0.5" customColor="161, 199, 231">
       <artifactMoniker Id="9474b446-ff05-4c95-9a3e-937bceaee530" LastKnownName="Статьи" />
     </artifactShape>
-    <useCaseGeneralizationConnector edgePoints="[(5 : 6.75); (5 : 6)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+    <useCaseGeneralizationConnector edgePoints="[(5 : 6.75); (5 : 6)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
       <generalizationMoniker Id="8eafa67f-d0bb-4ffb-a84b-c7ea4ccb18cd" />
       <relativeChildShapes />
       <nodes>
@@ -166,7 +166,7 @@
     <artifactShape Id="c4cdb4e5-3ea0-4344-b626-82c87d0553c2" absoluteBounds="2.5, 6.75, 1.5, 0.5" customColor="161, 199, 231">
       <artifactMoniker Id="277d7636-8b09-4314-9c49-ecdba54a1584" LastKnownName="Видео" />
     </artifactShape>
-    <useCaseGeneralizationConnector edgePoints="[(3.6 : 6.75); (4.65 : 6)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+    <useCaseGeneralizationConnector edgePoints="[(3.6 : 6.75); (4.65 : 6)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
       <generalizationMoniker Id="33a2e8c9-c20c-424c-8777-43e1d5c520ec" />
       <relativeChildShapes />
       <nodes>

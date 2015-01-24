@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-using WebInfo.Models.Domain;
+using WebInfo.Models.Shell;
 
 namespace WebInfo.Controllers
 {
@@ -28,21 +28,22 @@ namespace WebInfo.Controllers
         }
         public ActionResult Sidebar()
         {
-            var submenu_staff = new Category [] {
-                new Category {Name = "Учет персональных данных",Subcategories = new Category[0]},
-                new Category {Name = "Учет движения кадров",Subcategories = new Category[0]},
-                new Category {Name = "Настройка графиков работы",Subcategories = new Category[0]}
-                };
-            var submenu_salary = new Category[] {
-                new Category {Name = "Учет персональных данных",Subcategories = new Category[0]},
-                new Category {Name = "Учет движения кадров",Subcategories = new Category[0]},
-                new Category {Name = "Настройка графиков работы",Subcategories = new Category[0]}
-                };
-            var submenu = new Category[] {
-                new Category {Name = "Кадры",Subcategories = submenu_staff},
-                new Category {Name = "Зарплата",Subcategories =submenu_salary}
-                };
-            return PartialView(submenu);
+            //var submenu_staff = new Category [] {
+            //    new Category {Name = "Учет персональных данных",Subcategories = new Category[0]},
+            //    new Category {Name = "Учет движения кадров",Subcategories = new Category[0]},
+            //    new Category {Name = "Настройка графиков работы",Subcategories = new Category[0]}
+            //    };
+            //var submenu_salary = new Category[] {
+            //    new Category {Name = "Учет персональных данных",Subcategories = new Category[0]},
+            //    new Category {Name = "Учет движения кадров",Subcategories = new Category[0]},
+            //    new Category {Name = "Настройка графиков работы",Subcategories = new Category[0]}
+            //    };
+            //var submenu = new Category[] {
+            //    new Category {Name = "Кадры",Subcategories = submenu_staff},
+            //    new Category {Name = "Зарплата",Subcategories =submenu_salary}
+            //    };
+
+             return PartialView(WebInfo.Models.Shell.Sidebar.Create());
         }
         public ActionResult Login()
         {
