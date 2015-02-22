@@ -1,18 +1,20 @@
 ﻿@using WebInfo.Models.Shell;
-@model Sidebar
+@model Sidebar[]
 
-<div class="paad sidebar">
-    <div class="widget">
-        @foreach (Menu menu in Model.Menus)
-        { 
-        <h4 class="matopen">@menu.Name</h4>
-        <div class="matter">
-            <ul>
-                @foreach (Submenu smenu in menu.Submenus) {
-                    <li><a href="#">@smenu.Name</a></li>
-                }
-            </ul>
+@foreach (Sidebar sb in Model) {
+    <div class="paad sidebar">
+        <div class="widget">
+            @foreach (Menu menu in sb.Menus)
+            { 
+            <h4 class="matopen">@menu.Name</h4>
+            <div class="matter">
+                <ul>
+                    @foreach (Submenu smenu in menu.Submenus) {
+                        <li><a href="#">@smenu.Name</a></li>
+                    }
+                </ul>
+            </div>
+            }
         </div>
-        }
     </div>
-</div>
+}

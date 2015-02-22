@@ -32,10 +32,14 @@
       <SubType>Content</SubType>
       <DependentUpon>ТЦАВС ИНФО\Сайт.usecasediagram</DependentUpon>
     </Content>
+    <Content Include="Файлы\ТЦАВС ИНФО.mmap">
+      <SubType>Content</SubType>
+    </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\Modeling.uml">
       <SubType>Content</SubType>
     </Content>
+    <Folder Include="Файлы" />
     <Folder Include="ТЦАВС ИНФО" />
   </ItemGroup>
 </Project>

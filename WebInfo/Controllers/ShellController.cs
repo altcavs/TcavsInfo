@@ -10,6 +10,11 @@ namespace WebInfo.Controllers
 {
     public class ShellController : Controller
     {
+        private Shell shell;
+        public ShellController()
+        {
+            shell = WebInfo.Models.Shell.Shell.Create();
+        }
         public ActionResult Index()
         {
             ViewBag.Title = "ТЦАВС ИНФО";
@@ -28,22 +33,8 @@ namespace WebInfo.Controllers
         }
         public ActionResult Sidebar()
         {
-            //var submenu_staff = new Category [] {
-            //    new Category {Name = "Учет персональных данных",Subcategories = new Category[0]},
-            //    new Category {Name = "Учет движения кадров",Subcategories = new Category[0]},
-            //    new Category {Name = "Настройка графиков работы",Subcategories = new Category[0]}
-            //    };
-            //var submenu_salary = new Category[] {
-            //    new Category {Name = "Учет персональных данных",Subcategories = new Category[0]},
-            //    new Category {Name = "Учет движения кадров",Subcategories = new Category[0]},
-            //    new Category {Name = "Настройка графиков работы",Subcategories = new Category[0]}
-            //    };
-            //var submenu = new Category[] {
-            //    new Category {Name = "Кадры",Subcategories = submenu_staff},
-            //    new Category {Name = "Зарплата",Subcategories =submenu_salary}
-            //    };
 
-             return PartialView(WebInfo.Models.Shell.Sidebar.Create());
+             return PartialView(shell.Sidebars);
         }
         public ActionResult Login()
         {
