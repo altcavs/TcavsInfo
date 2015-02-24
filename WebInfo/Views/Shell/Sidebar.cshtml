@@ -6,11 +6,11 @@
         <div class="widget">
             @foreach (Menu menu in sb.Menus)
             { 
-            <h4 class="matopen">@menu.Name</h4>
+            <h4 class="matopen"><a ui-sref="@menu.State">@menu.Name</a></h4>
             <div class="matter">
                 <ul>
                     @foreach (Submenu smenu in menu.Submenus) {
-                        <li><a href="#">@smenu.Name</a></li>
+                        <li><a ui-sref="@smenu.State">@smenu.Name</a></li>
                     }
                 </ul>
             </div>

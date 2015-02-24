@@ -18,7 +18,6 @@ namespace WebInfo.Controllers
         public ActionResult Index()
         {
             ViewBag.Title = "ТЦАВС ИНФО";
-
             return View();
         }
         public ActionResult Shell()
@@ -26,14 +25,11 @@ namespace WebInfo.Controllers
              return View();
         }
         public ActionResult Menu()
-        {
-
-       
+        {      
             return PartialView();
         }
         public ActionResult Sidebar()
         {
-
              return PartialView(shell.Sidebars);
         }
         public ActionResult Login()
@@ -47,6 +43,14 @@ namespace WebInfo.Controllers
         public ActionResult Test()
         {
             return View();
+        }
+        public ActionResult Staff()
+        {
+            return PartialView();
+        }
+        public ActionResult ContentList()
+        {
+            return PartialView();
         }
 
     }

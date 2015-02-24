@@ -25,12 +25,13 @@ var app = angular.module('appInfo', ['ui.router', 'appInfo.controllers', 'appInf
                 templateUrl: "shell/news",
                 controller: "newsCtrl as vm"
             })
-
             .state("staff", {
-                url: "/staff",
-                templateUrl: "app/partials/staff.html",
+                url: "staff",
+                parent: "shell",
+                templateUrl: "shell/staff",
                 controller: "staffCtrl"
             })
+
             .state("salary", {
                 url: "/salary",
                 templateUrl: "app/partials/salary.html",

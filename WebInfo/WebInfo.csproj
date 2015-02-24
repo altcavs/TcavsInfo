@@ -219,6 +219,7 @@
   <ItemGroup>
     <Content Include="appInfo\app.js" />
     <Content Include="appInfo\shell\mock.js" />
+    <Content Include="appInfo\shell\staff.js" />
     <Content Include="appInfo\shell\services.js" />
     <Content Include="appInfo\shell\login.js" />
     <Content Include="appInfo\shell\news.js" />
@@ -593,6 +594,8 @@
     <Content Include="Views\Shell\News.cshtml" />
     <Content Include="Views\Shell\Menu.cshtml" />
     <Content Include="Views\Shell\Sidebar.cshtml" />
+    <Content Include="Views\Shell\Staff.cshtml" />
+    <Content Include="Views\Shell\ContentList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

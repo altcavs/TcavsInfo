@@ -17,12 +17,16 @@ namespace WebInfo.Models.Shell
     {
         public string Name { get; set; }
         public IList<Submenu> Submenus { get; set; }
+
+        public string State { get; set; }
  
     }
 
     public class Submenu
     {
         public string Name { get; set; }
+
+        public string State { get; set; }
 
     }
 

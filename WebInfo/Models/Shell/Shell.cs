@@ -14,21 +14,20 @@ namespace WebInfo.Models.Shell
         public static Shell Create()
         {
             // Новости
-            var sbNews = new Sidebar { Name = "Новости"};
+            var sbNews = new Sidebar { Name = "Новости" };
             
             var smNews = new Submenu[] {
-                new Submenu {Name = "Бухгалтерия"},
                 new Submenu {Name = "Зарплата и кадры"},
                 new Submenu {Name = "Документооборот"}
                 };
 
-            var mNews = new Menu { Name = "Новости" };
+            var mNews = new Menu { Name = "Новости", State = "news"};
             mNews.Submenus = smNews;
 
             sbNews.Menus = new Menu[] { mNews };
 
             // Зарплата и Кадры
-            var sidebar = new Sidebar { Name = "Зарплата и Кадры"};
+            var sidebar = new Sidebar { Name = "Зарплата и Кадры" };
             var submenu_staff = new Submenu[] {
                 new Submenu {Name = "Учет персональных данных"},
                 new Submenu {Name = "Учет движения кадров"},
@@ -42,7 +41,7 @@ namespace WebInfo.Models.Shell
                 };
             
             var menus = new Menu[] {
-                new Menu {Name = "Кадры",Submenus = submenu_staff},
+                new Menu {Name = "Кадры", State = "staff",Submenus = submenu_staff},
                 new Menu {Name = "Зарплата",Submenus =submenu_salary}
                 };
 

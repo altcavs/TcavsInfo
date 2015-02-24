@@ -25,14 +25,14 @@
   <Class Name="WebInfo.Models.Shell.Menu">
     <Position X="8.75" Y="2" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAEAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAQAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Models\Shell\Sidebar.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="WebInfo.Models.Shell.Submenu">
-    <Position X="8.75" Y="3.5" Width="2.25" />
+    <Position X="8.75" Y="3.75" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Models\Shell\Sidebar.cs</FileName>
     </TypeIdentifier>
   </Class>
