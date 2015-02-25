@@ -7,6 +7,8 @@ namespace WebInfo.Models.Domain
     public class Category : Entity<int>
     {
         public string Name { get; set; }
+        public String Slug { get; set; }
+        public String InfoContent { get; set; }
         public IList<Category> Subcategories { get; set; }
 
         public Category() //required for EF

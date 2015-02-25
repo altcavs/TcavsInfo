@@ -11,7 +11,7 @@
   <Class Name="WebInfo.Models.Domain.Category">
     <Position X="3" Y="3" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>ABQAAAAAAAAAAAAAAAAAAAQAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <HashCode>ABQAAAAAAAAAAAAAAAAAAAQAAAAAAEAAAAAAAAQAAAA=</HashCode>
       <FileName>Models\Domain\Category.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -37,7 +37,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="WebInfo.Models.Shell.Shell">
-    <Position X="10.5" Y="1" Width="2.25" />
+    <Position X="10.75" Y="0.5" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Shell\Shell.cs</FileName>
@@ -46,7 +46,7 @@
   <Class Name="WebInfo.Models.Domain.Content">
     <Position X="6.5" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAEAAgAAAAAIAAAAAAIAAAAAAAQAACAA=</HashCode>
       <FileName>Models\Domain\Content.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
