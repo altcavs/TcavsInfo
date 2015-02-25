@@ -32,6 +32,9 @@
       <SubType>Content</SubType>
       <DependentUpon>ТЦАВС ИНФО\Сайт.usecasediagram</DependentUpon>
     </Content>
+    <Content Include="Файлы\ТЦАВС ИНФО.bmml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Файлы\ТЦАВС ИНФО.mmap">
       <SubType>Content</SubType>
     </Content>

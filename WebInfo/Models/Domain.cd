@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="WebInfo.Models.Domain.Entity&lt;TId&gt;">
-    <Position X="3" Y="0.5" Width="2.25" />
+    <Position X="4.75" Y="0.5" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAAgAAAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Domain\Entity.cs</FileName>
@@ -9,39 +9,49 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="WebInfo.Models.Domain.Category">
-    <Position X="3" Y="2.75" Width="2.25" />
+    <Position X="3" Y="3" Width="2.25" />
     <TypeIdentifier>
       <HashCode>ABQAAAAAAAAAAAAAAAAAAAQAAAAAAEAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Domain\Category.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="WebInfo.Models.Shell.Sidebar">
-    <Position X="8.75" Y="0.5" Width="2.25" />
+    <Position X="13.5" Y="0.5" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAABAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Shell\Sidebar.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="WebInfo.Models.Shell.Menu">
-    <Position X="8.75" Y="2" Width="2.25" />
+    <Position X="13.5" Y="2" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAEAAAAAAAAAQAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Models\Shell\Sidebar.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="WebInfo.Models.Shell.Submenu">
-    <Position X="8.75" Y="3.75" Width="2.25" />
+    <Position X="13.5" Y="3.75" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Models\Shell\Sidebar.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="WebInfo.Models.Shell.Shell">
-    <Position X="6" Y="0.5" Width="2.25" />
+    <Position X="10.5" Y="1" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Shell\Shell.cs</FileName>
     </TypeIdentifier>
+  </Class>
+  <Class Name="WebInfo.Models.Domain.Content">
+    <Position X="6.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Models\Domain\Content.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Category" />
+    </ShowAsAssociation>
   </Class>
   <Interface Name="WebInfo.Models.Interfaces.IEntity">
     <Position X="0.5" Y="0.5" Width="2.25" />
